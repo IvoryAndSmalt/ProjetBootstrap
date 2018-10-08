@@ -1,0 +1,202 @@
+
+/********************************
+********END OF CSS RESET*********
+********************************/
+
+/* .container{
+    padding: 0 15px;
+}
+
+.header{
+    height: 155px;
+    background: #003c5a;
+}
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.navbar .navbar-brand{
+    color: #edf4f8;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar .navbar-nav{
+    margin: 0 auto;
+}
+
+.nav-item .nav-link{
+    color: #2379a3;
+    transition: ease-in-out 0.3s;
+}
+
+.nav-item .nav-link:hover{
+    color: #edf4f8;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar .dropdown-menu{
+    background-color: #edf4f8;
+}
+
+.dropdown-item{
+    background-color: #edf4f8;
+    color: #003c5a;
+    transition: ease-in-out 0.3s;
+}
+
+.dropdown-item:hover{
+    background: transparent;
+    color: #fc8f44 !important;
+    transition: ease-in-out 0.3s;
+} */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #7d7d7d;
+    font-weight: 300;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: "Merriweather", serif;
+    line-height: 1.55;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.container{
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+
+.ourbookh1{
+    color: #252525;
+    text-align: center; 
+}
+
+.ourbookh2{
+    color: #555555;
+    text-align: center;
+    line-height: 1.3125;
+    margin-top: 30px;
+}
+
+.ourbookp{
+    margin-top: 30px;
+}
+
+.secourbook{
+    background: #eaf2f6;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .header {
+        background: #003c5a;
+        height: 56px;    
+        width: 100%;
+        border: solid 1px red;
+    }
+
+    h2{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: "Merriweather", serif;
+        text-align: center;
+    }
+
+    .seccarousel{
+        width: 100%;
+        height: 250px;
+        background: #e76e33;
+    }
+
+    .height100{
+        margin-left: auto;
+        margin-right: auto;
+        width: 38px; 
+        height: 33px;
+    }
+}
+
+/*
+Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .header{
+        background: #003c5a;
+        height: 155px;
+        width: 100%;
+        border: solid 1px red;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .ourbookh1{
+        text-align: left;
+    }
+  
+    .ourbookh2{
+        text-align: left;
+    }
+
+    .ourbookp{
+        text-align: left;
+    }
+}
+
+
+/*
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+.secopen{
+    background: url(img/backgroundsecopen.png) #003c5a no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+/* #003c5a */
+
+.navbar{
+    background: #003c5a;
+}
+
+.navbar-brand{
+    font: 700 30px/62px "Merriweather", serif;
+    color: #edf4f8;
+}
+
+.navbar-brand:hover{
+    font: 700 30px/62px "Merriweather", serif;
+    color: #edf4f8;
+}
+
+.navbar-toggler{
+    color: #edf4f8;
+}
+
+.navbar-toggler-icon{
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+li > a{
+    color:#2379a3;
+    transition: color ease-in-out 0.2s
+}
+
+li > a:hover{
+    color: #ebebeb;
+    transition: color ease-in-out 0.2s
+}
