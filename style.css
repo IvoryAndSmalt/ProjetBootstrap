@@ -1,57 +1,3 @@
-
-/********************************
-********END OF CSS RESET*********
-********************************/
-
-/* .container{
-    padding: 0 15px;
-}
-
-.header{
-    height: 155px;
-    background: #003c5a;
-}
-
-.navbar{
-    background-color: transparent !important;
-}
-
-.navbar .navbar-brand{
-    color: #edf4f8;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.navbar .navbar-nav{
-    margin: 0 auto;
-}
-
-.nav-item .nav-link{
-    color: #2379a3;
-    transition: ease-in-out 0.3s;
-}
-
-.nav-item .nav-link:hover{
-    color: #edf4f8;
-    transition: ease-in-out 0.3s;
-}
-
-.navbar .dropdown-menu{
-    background-color: #edf4f8;
-}
-
-.dropdown-item{
-    background-color: #edf4f8;
-    color: #003c5a;
-    transition: ease-in-out 0.3s;
-}
-
-.dropdown-item:hover{
-    background: transparent;
-    color: #fc8f44 !important;
-    transition: ease-in-out 0.3s;
-} */
-
 body{
     font-family: 'Open Sans', sans-serif;
     color: #7d7d7d;
@@ -66,11 +12,126 @@ img{
     height: auto;
 }
 
+a{
+    color: white;
+}
+
+a:hover{
+    color: #fc8f44;
+}
+
+p{
+    color: #66b8e0;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
 h1{
     font-family: "Merriweather", serif;
     line-height: 1.55;
     font-size: 36px;
     font-weight: 300;
+}
+
+.dropdown:hover > .dropdown-menu{
+    display: block
+    } 
+
+.navbar{
+    background: #003c5a;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+.navbar-brand{
+    font: 700 20px/1.3 "Merriweather", serif;
+    color: #edf4f8;
+}
+
+.navbar-brand:hover{
+    font: 700 20px/1.3 "Merriweather", serif;
+    color: #edf4f8;
+}
+
+.telephone{
+    display: none;
+    font-weight: 300;
+    transition: color ease-in-out 0.2s;
+    font-size: 20px;
+}
+
+.telephone:hover{
+    display: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.btntelephone{
+    background: #edf4f8;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    z-index: 1;
+    transition: background ease-in-out 0.2s;
+}
+
+.btntelephone:hover{
+    background: lightblue;
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    color: #edf4f8;
+}
+
+.navbar-toggler-icon{
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+li > a{
+    color:#2379a3;
+    transition: color ease-in-out 0.2s;
+}
+
+li > a:hover{
+    color: #ebebeb;
+    transition: color ease-in-out 0.2s;
+}
+
+.dropdown-item{
+    color: #003c5a;
+    font-weight: 300;
+    line-height: 40px;
+    transition: color ease-in-out 0.2s;
+}
+
+.dropdown-item:hover{
+    color: #fc8f44;
+    font-weight: 300;
+    line-height: 40px;
+    background: transparent;
+    transition: color ease-in-out 0.2s;
+}
+/*********************************************
+******************** SECOPEN ******************
+***********************************************/
+
+.secopenh1{
+    line-height: 1.3;
+    font-size: 32px;
+    color: white;
+    letter-spacing: .4px;
+    text-align: center;
+
+}
+
+.secopenp{
+    text-align: center;
 }
 
 .container{
@@ -98,13 +159,24 @@ h1{
     background: #eaf2f6;
 }
 
-/* Small devices (landscape phones, 576px and up)*/
+.secopen{
+    background: url(img/backgroundsecopen.png) #003c5a no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+
+/* SM Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+
     .header {
         background: #003c5a;
         height: 56px;    
         width: 100%;
-        border: solid 1px red;
+    }
+
+    .navbar{
+        max-width: 576px;
     }
 
     h2{
@@ -130,18 +202,67 @@ h1{
 }
 
 /*
-Medium devices (tablets, 768px and up)*/
+Medium devices MD (tablets, 768px and up)*/
 @media (min-width: 768px) {
     .header{
         background: #003c5a;
-        height: 155px;
         width: 100%;
-        border: solid 1px red;
     }
+
+    .navbar{
+        max-width: 768px;
+    }
+
+/* SECOPEN */
+    .secopenh1{
+        font-size: 40px;
+    }
+
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices LG (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    .header{
+        height: 155px;
+    }
+    
+    .navbar{
+        max-width: 992px;
+    }
+
+    .navbar-brand{
+        font: 700 15px/31px "Merriweather", serif;
+    }
+
+    .navbar-brand:hover{
+        font: 700 15px/31px "Merriweather", serif;
+    }
+
+    .btntelephone{
+        display: none;
+    }
+
+    .telephone{
+        display: flex;
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+        transition: color ease-in-out 0.2s;
+    }
+
+    .telephone:hover{
+        display: flex;
+        font-weight: 300;
+        font-size: 20px;
+        color: #fc8f44;
+        transition: color ease-in-out 0.2s;
+    }
+
+    /* SECOPEN */
+    .secopenh1{
+    font-size: 44px;
+    }
 
     .ourbookh1{
         text-align: left;
@@ -158,45 +279,26 @@ Medium devices (tablets, 768px and up)*/
 
 
 /*
-Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
+/* Extra large devices XL (large desktops, 1200px and up)  */
+@media (min-width: 1200px) {
 
-.secopen{
-    background: url(img/backgroundsecopen.png) #003c5a no-repeat;
-    background-size: cover;
-    height: 700px;
+    .navbar{
+        max-width: 1200px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /* SECOPEN */
+    .secopenh1{
+        font-size: 48px;
+        }
+
+} 
+
+*{
+    transition: background ease-in-out 0.2s;
+    transition: color ease-in-out 0.2s;
 }
 
-/* #003c5a */
-
-.navbar{
-    background: #003c5a;
-}
-
-.navbar-brand{
-    font: 700 30px/62px "Merriweather", serif;
-    color: #edf4f8;
-}
-
-.navbar-brand:hover{
-    font: 700 30px/62px "Merriweather", serif;
-    color: #edf4f8;
-}
-
-.navbar-toggler{
-    color: #edf4f8;
-}
-
-.navbar-toggler-icon{
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-}
-
-li > a{
-    color:#2379a3;
-    transition: color ease-in-out 0.2s
-}
-
-li > a:hover{
-    color: #ebebeb;
-    transition: color ease-in-out 0.2s
-}
