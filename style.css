@@ -4,6 +4,15 @@ body{
     font-weight: 300;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    background: #003c5a;
+    height: 57px;    
+    width: 100%;
+    z-index: 1;
+}
+
 img{
     display: block;
     margin-left: auto;
@@ -35,11 +44,10 @@ h1{
 
 .dropdown:hover > .dropdown-menu{
     display: block
-    } 
+    }
 
 .navbar{
     background: #003c5a;
-    max-width: 100%;
     justify-content: flex-start;
 }
 
@@ -72,11 +80,11 @@ h1{
     width: 30px;
     border-radius: 50%;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 15px;
     border: none;
-    z-index: 1;
+    z-index: 999;
     transition: background ease-in-out 0.2s;
 }
 
@@ -87,6 +95,11 @@ h1{
 
 .navbar-toggler{
     color: #edf4f8;
+}
+
+.navbar-nav{
+    background: #003c5a;
+
 }
 
 .navbar-toggler-icon{
@@ -162,16 +175,29 @@ li > a:hover{
 .secopen{
     background: url(img/backgroundsecopen.png) #003c5a no-repeat;
     background-size: cover;
-    height: 700px;
+    background-position: center;
+    background-position-y: bottom;
 }
+
+.secopen .container{
+    padding-top: 25px;
+    padding-bottom: 140px;
+}
+
+.btn{
+    width: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 /* SM Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
     .header {
-        background: #003c5a;
-        height: 56px;    
+        background: #003c5a;    
         width: 100%;
     }
 
@@ -185,6 +211,11 @@ li > a:hover{
         font-weight: 300;
         font-family: "Merriweather", serif;
         text-align: center;
+    }
+
+    .secopen .container{
+        padding-top: 35px;
+        padding-bottom: 190px;
     }
 
     .seccarousel{
@@ -214,6 +245,12 @@ Medium devices MD (tablets, 768px and up)*/
     }
 
 /* SECOPEN */
+    .secopen .container{
+    padding-top: 100px;
+    padding-bottom: 250px;
+    }      
+
+
     .secopenh1{
         font-size: 40px;
     }
@@ -222,21 +259,32 @@ Medium devices MD (tablets, 768px and up)*/
 
 /* Large devices LG (desktops, 992px and up) */
 @media (min-width: 992px) {
+    ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .header{
-        height: 155px;
+        display: flex;
     }
     
     .navbar{
+        margin-left: auto;
+        margin-right: auto;
         max-width: 992px;
+        width: 100%;
+    }
+
+    .nav-item{
+        margin-left: 30px;
     }
 
     .navbar-brand{
-        font: 700 15px/31px "Merriweather", serif;
+        font: 700 30px/31px "Merriweather", serif;
     }
 
     .navbar-brand:hover{
-        font: 700 15px/31px "Merriweather", serif;
+        font: 700 30px/31px "Merriweather", serif;
     }
 
     .btntelephone{
@@ -263,6 +311,13 @@ Medium devices MD (tablets, 768px and up)*/
     .secopenh1{
     font-size: 44px;
     }
+
+    .secopen .container{
+        padding-bottom: 300px;
+    } 
+
+
+    /*OURBOOK*/
 
     .ourbookh1{
         text-align: left;
@@ -294,6 +349,12 @@ Medium devices MD (tablets, 768px and up)*/
     .secopenh1{
         font-size: 48px;
         }
+
+    .secopen .container{
+        padding-top: 116px;
+        padding-bottom: 438px;
+    } 
+    
 
 } 
 
