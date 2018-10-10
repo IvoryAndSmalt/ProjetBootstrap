@@ -1,3 +1,12 @@
+#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     color: #7d7d7d;
@@ -57,8 +66,8 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     background: #f08237;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     margin-top: 30px;
 }
 
@@ -87,9 +96,132 @@ h1{
     color: #edf4f8;
 }
 
-.navbar-brand:hover{
+.langerba:hover{
     font: 700 20px/1.3 "Merriweather", serif;
     color: #edf4f8;
+}
+
+/******************FOOTER**************/
+
+.footer{
+    background: #272727;
+    height: auto;   
+    width: 100%;
+    z-index: 1;
+    }
+
+.footer .navbar{
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer .navbar-nav{
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+.footer .navbar-brand{
+    font: 700 30px/62px "Merriweather", serif;
+    color: #edf4f8;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .navbar-brand:hover{
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.footer ul{
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer li a:hover{
+    color: #d2d2d2;
+}
+
+.footer li a{
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.listeicones{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.iconesfooter{
+    display: flex;
+}
+
+.iconesfooter i{
+    color: #7d7d7d;
+    font-size: 20px;
+    margin: 0 11px;
+    transition: color ease-in-out 0.2s;
+}
+
+.iconesfooter i:hover{
+    color: #fc8f44;
+}
+
+.footer .nav-link{
+    padding: 2px;
+}
+
+.footer .nav-item{
+    margin-left: 0;
+}
+
+.tos{
+    background: #272727;
+    height: auto;   
+    width: 100%;
+    z-index: 1;
+}
+
+.tos .container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.tosp{
+    padding-top: 18px;
+    padding-bottom: 33px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 13px;
+    color:#7d7d7d;
+}
+
+.tosp a{
+    color: white;
+    text-decoration: none;
+    transition: color ease-in-out 0.2s;
+}
+
+.tosp a:hover{
+    color: #fc8f44;
+}
+
+.inline-list{
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .telephone{
@@ -106,6 +238,7 @@ h1{
 }
 
 .btntelephone{
+    border: none;
     background: #edf4f8;
     height: 30px;
     width: 30px;
@@ -117,6 +250,11 @@ h1{
     border: none;
     z-index: 1050;
     transition: background ease-in-out 0.2s;
+}
+
+.btntelephone a{
+    text-transform: rotate(-90deg);
+    color: black;
 }
 
 .btntelephone:hover{
@@ -233,12 +371,124 @@ li > a:hover{
 
 .ourbookp{
     margin-top: 30px;
+    text-align: center;
 }
 
 .secourbook{
     background: #eaf2f6;
 }
 
+
+/***********************************************
+**********************6REASONS******************
+***********************************************/
+
+.sixbox1{
+    position: relative;
+    display: block;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.sixreasons img{
+    color: orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: initial;
+    height: initial;
+}
+
+.sixreasonsh1{
+    color: #252525;
+    text-align: center;
+    font-size: 40px;
+}
+
+.sixreasonsh2{
+    color: #555555;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.3125;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.sixreasonsp{
+    color: #555555;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.secsixreasons{
+    background: white;
+}
+
+.secsixreasons .container{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+/***********************************************
+**********************getemail******************
+***********************************************/
+    .getemail .btn{
+        max-width: 210px;
+        padding: 15px 17px;
+    }
+
+    .getemail{
+        background: #003c5a;
+    }
+
+    .getemail .container{
+        max-width: 450px;
+    }
+
+    .getemailh1{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+
+    .getemailinput{
+        height: 50px;
+        width: 100%;
+        border-radius: 24px;
+        padding: 8px 18px;
+        border: none;
+        color: #555555;
+    }
+
+    .getemail a, input{
+        display: block;
+        margin-top: 30px;
+    }
+
+    .getemailp{
+        color: #66b8e0;
+        font-size: 16px;
+        line-height: 1.55;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .boutonhaut{
+        background: #fc8f44;
+        color: white;
+        font-weight: 300;
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        border-radius: 24px;
+        padding: 10px 18px;
+        box-shadow: #555555 2px 2px 5px;
+    }
+
+    .boutonhaut:hover{
+        background: #fc802b;
+    }
 
 /* SM Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -302,6 +552,20 @@ Medium devices MD (tablets, 768px and up)*/
         font-size: 40px;
     }
 
+    /*6reasons*/
+    .logomonde{
+        position: absolute;
+    }
+
+    .sixreasonsh2{
+        text-align: left;
+        margin-left: 100px;
+    }
+    .sixreasonsp{
+        text-align: left;
+        margin-left: 100px;
+    }
+
 }
 
 /* Large devices LG (desktops, 992px and up) */
@@ -312,6 +576,10 @@ Medium devices MD (tablets, 768px and up)*/
     }
 
     .header{
+        display: flex;
+    }
+
+    .footer{
         display: flex;
     }
     
@@ -330,7 +598,7 @@ Medium devices MD (tablets, 768px and up)*/
         font: 700 30px/31px "Merriweather", serif;
     }
 
-    .navbar-brand:hover{
+    header .navbar-brand:hover{
         font: 700 30px/31px "Merriweather", serif;
     }
 
@@ -338,7 +606,7 @@ Medium devices MD (tablets, 768px and up)*/
         display: none;
     }
 
-    .telephone{
+    header .telephone{
         display: flex;
         font-weight: 300;
         font-size: 20px;
@@ -346,7 +614,7 @@ Medium devices MD (tablets, 768px and up)*/
         transition: color ease-in-out 0.2s;
     }
 
-    .telephone:hover{
+    header .telephone:hover{
         display: flex;
         font-weight: 300;
         font-size: 20px;
@@ -363,7 +631,6 @@ Medium devices MD (tablets, 768px and up)*/
         padding-bottom: 300px;
     } 
 
-
     /*OURBOOK*/
 
     .ourbookh1{
@@ -377,12 +644,22 @@ Medium devices MD (tablets, 768px and up)*/
     .ourbookp{
         text-align: left;
     }
-}
 
+    .tosp{
+        text-align: left;
+    }
+    
+}
 
 /*
 /* Extra large devices XL (large desktops, 1200px and up)  */
 @media (min-width: 1200px) {
+
+    .container{
+        max-width: 1200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        }
 
     .secstudying{
         padding-top: 1.04rem;
@@ -410,5 +687,31 @@ Medium devices MD (tablets, 768px and up)*/
         padding-top: 116px;
         padding-bottom: 438px;
     } 
-    
+
+    /*email*/
+
+    .getemail .container{
+        max-width: 1200px;
+        position: relative;
+        padding-bottom: 200px;
+    }
+
+    .getemail .btn{
+        max-width: 270px;
+    }
+
+    .getemail a{
+        margin-left: 30px;
+        right: 220px;
+    }
+
+    .getemailinput{
+        max-width: 470px;
+        left: 220px;
+    }
+
+    .getemail a, input{
+        position: absolute;
+        display: inline;
+    }
 }
